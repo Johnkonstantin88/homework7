@@ -21,7 +21,7 @@
   <!-- Navi -->
   <body>
     <header class="page-header">
-      <div class="container nav-container nav-border">
+      <div class="container nav-container nav-border nav-mobile">
         <nav class="nav-container">
           <a href="./index.html" class="logo list"
             ><span class="logo-accent">WEB</span>STUDIO</a
@@ -56,20 +56,85 @@
             </li>
           </ul>
         </address>
+        <button class="mobile-menu-open-button js-open-menu" type="button">
+          <svg class="mobile-menu-open-button-icon" width="32" height="22">
+            <use href="./images/srpite.svg#icon-menu-mobile"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu js-menu-container">
+        <div class="mobile-menu-container">
+          <button type="button" class="mobile-menu-close js-close-menu">
+            <svg class="modal-close-icon" width="8" height="8" aria-label="close-icon">
+              <use href="./images/srpite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu-nav list">
+            <li>
+              <a href="./index.html" class="mobile-menu-link header-link list">Studio</a>
+              <div class="header-list-item"></div>
+            </li>
+            <li>
+              <a href="./portfolio.html" class="mobile-menu-link header-link list">Portfolio</a>
+            </li>
+            <li><a href="/" class="mobile-menu-link header-link list">Contacts</a></li>
+          </ul>
+          
+          <address class="address-mobile">
+            <ul class="mobile-menu-auth-nav">
+              <li>
+                <a href="tel:+110001111111" class="auth-link list mobile-tel-link">+11 (000) 111-11-11</a>
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="auth-link list mobile-mail-link">info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="mobile-menu-icons list">
+              <li class="sm">
+                <a href="#" class="sm-icon">
+                  <svg class="sm-picture" width="24" height="24" aria-label="instagram">
+                    <use href="./images/srpite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="sm">
+                <a href="#" class="sm-icon">
+                  <svg class="sm-picture" width="24" height="24" aria-label="twitter">
+                    <use href="./images/srpite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="sm">
+                <a href="#" class="sm-icon">
+                  <svg class="sm-picture" width="24" height="24" aria-label="facebook">
+                    <use href="./images/srpite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="sm">
+                <a href="#" class="sm-icon">
+                  <svg class="sm-picture" width="24" height="24" aria-label="linkedin">
+                    <use href="./images/srpite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </header>
     <main>
       <!-- Hero -->
-      <section class="hero-section">
+      <!-- <section class="hero-section">
         <div class="main-part container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="main-button" data-modal-open>
             Order Service
           </button>
         </div>
-      </section>
+      </section> -->
       <!-- Soft skills -->
-      <section>
+      <!-- <section>
         <div class="container">
           <h2 class="second-header hiden">soft skills</h2>
           <ul class="feature-list description-icons list">
@@ -123,9 +188,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- What are we doing -->
-      <section>
+      <!-- <section>
         <div class="doing container">
           <h2 class="second-header">What are we doing</h2>
           <ul class="feature-list list">
@@ -148,9 +213,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Our team -->
-      <section class="team-section">
+      <!-- <section class="team-section">
         <div class="team container">
           <h2 class="second-header">Our Team</h2>
           <ul class="team-list list">
@@ -400,9 +465,9 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section>
-        <!-- Customers -->
+      </section> -->
+      <!-- Customers -->
+      <!-- <section>
         <div class="container">
           <h2 class="second-header">Customers</h2>
           <ul class="customers-list list">
@@ -480,10 +545,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!-- footer -->
-    <footer class="page-footer">
+    <!-- <footer class="page-footer">
       <div class="container footer-content">
         <div class="footer-part">
           <a href="./index.html" class="logo-footer list"
@@ -575,9 +640,9 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!-- Modal window -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
           <svg
@@ -693,7 +758,8 @@
           <button type="submit" class="main-button submit-button">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

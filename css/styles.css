@@ -531,10 +531,10 @@ border-radius: 2px;
   margin-left: auto;
 }
 
-@media screen and (min-device-pixel-ratio: 2) and 
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), 
+screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
+screen and (max-width: 767px) and (min-resolution: 192dpi),
+screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero-section {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)), 
@@ -552,11 +552,10 @@ border-radius: 2px;
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and 
-(-webkit-min-device-pixel-ratio: 2) and  
-(min-width: 768px) and
-(min-resolution: 192dpi) and
-(min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), 
+screen and (min-width: 768px) and (min-resolution: 192dpi),
+screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero-section {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
@@ -574,11 +573,10 @@ border-radius: 2px;
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and 
-(-webkit-min-device-pixel-ratio: 2) and 
-(min-width: 1158px) and
-(min-resolution: 192dpi) and
-(min-resolution: 2dppx) {
+@media screen and (min-width: 1158px) and (min-device-pixel-ratio: 2),
+screen and (min-width: 1158px) and (-webkit-min-device-pixel-ratio: 2), 
+screen and (min-width: 1158px) and (min-resolution: 192dpi),
+screen and (min-width: 1158px) and (min-resolution: 2dppx) {
   .hero-section {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
@@ -738,7 +736,7 @@ border-radius: 2px;
 
 .description-icons {
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 0px;
 }
 
 .subtitle {
@@ -755,6 +753,19 @@ border-radius: 2px;
 
 
 
+/* WHAT WE ARE DOING */
+
+.something-container {
+  display: none;
+  
+}
+
+@media screen and (min-width: 1158px) {
+  .something-container {
+    display: block;
+    padding-bottom: 120px;
+  }
+}
 
 /* .item {
   width: calc((100% - 72px) / 4);
@@ -825,9 +836,6 @@ border-radius: 2px;
   background-color: var(--light-mode-color);
 }
 
-.doing {
-  padding-bottom: 120px;
-}
 /* H3 */
 
 

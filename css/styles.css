@@ -1360,10 +1360,21 @@ align-items: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 408px;
+  width: 392px;
   height: 584px;
   background-color: #fff;
-  padding: 72px 24px 24px 24px;
+  padding-top: 72px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 408px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
 
 .modal-close {
@@ -1413,6 +1424,7 @@ align-items: center;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
+
 
 .modal-description {
   margin-bottom: 16px;
@@ -1514,18 +1526,27 @@ align-items: center;
   white-space: nowrap;
   clip-path: inset(100%);
 }
-
 .checkbox-text {
-  align-items: center;
   position: relative;
-  padding-left: 24px;
+  display: flex;
+  align-items: center;
+  /* padding-left: 24px; */
 }
 .span-svg {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  justify-content: center;
+  margin-right: 8px;
+  /* position: absolute; */
+    left: 0;
+    top: 0;
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+  /* justify-content: center; */
 }
-.checkbox-text::before {
+/* .checkbox-text::before {
   position: absolute;
   left: 0;
   top: 0;
@@ -1534,7 +1555,12 @@ align-items: center;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-}
+} */
+
+/* .checkbox-field {
+  display: block;
+
+} */
 
 .icon-click {
   opacity: 0;
@@ -1560,6 +1586,7 @@ visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .policy-link {
+  margin-left: 4px;
   color: var(--links-color);
 }
 
@@ -1570,3 +1597,33 @@ visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 .submit-button {
   margin-top: 24px;
 }
+
+@media screen and (max-width: 427px) {
+
+  .checkbox-text {
+    flex-wrap: wrap;
+  }
+
+  .policy-link {
+    margin-left: 24px;
+  }
+
+ 
+  .modal {
+    width: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .callback-form {
+    width: 280px;
+  }
+
+  .form-field textarea {
+    height: 82px;
+  }
+
+
+
+}
+
